@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
@@ -38,7 +38,7 @@
         <input id="adj-1" type="text" name="adj-1" required />
         <br />
         <label for="verb-1">Verb (ends in -ing):</label>
-        <input id="verb-1" type="text" name="verb-1" required/>
+        <input id="verb-1" type="text" name="verb-1" required />
         <br />
         <label for="num-1">Number:</label>
         <input id="num-1" type="number" name="num-1" required />
@@ -51,21 +51,33 @@
         <br />
         <label for="speed">Relative speed (ends in -er):</label>
         <select id="speed" name="speed" required>
-            <option value="faster">Faster</option>
-            <option value="slower">Slower</option>
-            <option value="statelier">Statelier</option>
+          <option value="faster">Faster</option>
+          <option value="slower">Slower</option>
+          <option value="statelier">Statelier</option>
         </select>
         <br />
         <label for="quote">Motivational Quote:</label>
-        <input name="quote" id="quote" type="text" list="quote-choices" required>
-        <datalist id="quote-choices" rows="8">
-            <option value="winner gets ice cream!"></option>
-            <option value="early bird catches the worm"></option>
-            <option value="slow and steady wins the race!"></option>
+        <input
+          name="quote"
+          id="quote"
+          type="text"
+          list="quote-choices"
+          required
+        />
+        <datalist id="quote-choices" minlength="14">
+          <option value="winner gets ice cream!"></option>
+          <option value="early bird catches the worm"></option>
+          <option value="slow and steady wins the race!"></option>
         </datalist>
         <br />
         <label for="message">Meaningful Message:</label>
-        <textarea id="message" name="message" required rows="8" cols="40"></textarea>
+        <textarea
+          id="message"
+          name="message"
+          required
+          rows="8"
+          cols="40"
+        ></textarea>
         <br />
         <input type="submit" value="Form My Story!" />
       </form>
